@@ -4,68 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Kts CounterApp </title>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        background: linear-gradient(135deg, #1e3c72, #2a5298);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #fff;
-    }
-
-    .card  {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        background-color: rgb(255, 255, 255);
-        padding: 40px 30px;
-        border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        width: 300px;
-        height: 300px;
-    }
-
-    h1 {
-        font-size: 4rem;
-        margin-bottom: 10px;
-        color: #140505;
-
-    }
-
-    .btn {
-        font-size: 25px;
-        width: 220px;
-        padding: 12px;
-        margin: 10px 0;
-        margin-left: 40px;
-        
-        font-weight: bold;
-        border: none;
-        border-radius: 8px;
-        background-color: #007BFF;
-        color: white;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-        background-color: #0056b3;
-    }
-
-    .btn:active {
-        transform: scale(0.98);
-    }
-</style>
 </head>
-
-
-
 
 <body>
     
@@ -76,28 +17,9 @@
     <button class="btn" onclick="reset()">Reset</button>
 
    </div>
+   <script src="script.js"></script>
 
-    <script>
-        let count = 0;
-        let element = document.getElementById("result");
-        element.innerText = count;
-
-        function increase() {
-            count = count + 1;
-            element.innerText = count;
-           
-        }
-        function decrease() {
-            count = count - 1;
-            element.innerText = count;
-        }
-        function reset() {
-            count = 0;
-            element.innerText = count ;
-        }
-        
-        
-    </script>
+   
 </body>
 
 </html>
